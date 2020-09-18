@@ -1,0 +1,2647 @@
+<!DOCTYPE html>
+<html lang="en" id="scrollbody">
+<head>
+	<meta charset="UTF-8">
+	<title>Action724</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/imagehover.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="fonts_2/flaticon.css">
+	<link rel="stylesheet" href="css/perfect-scrollbar.css">
+	<link rel="stylesheet" href="css/statistics.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<header class="container">
+		<div class="logo">
+			<img src="img/logo.png" alt="">
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="leftAndRightPanel">
+				<section class="left_Panel">
+					<div class="searchAndList">
+						<div class="search">
+							<form action="">
+								<input type="search">
+								<button><i class="search"></i></button>
+							</form>
+						</div>
+						<div class="list">
+							<ul>
+								<li>
+									<a href="">
+										<i class="soccer sports_Icon"></i>
+										<span>Soccer</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="basketball sports_Icon"></i>
+										<span>Basketball</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="fieldhockey sports_Icon"></i>
+										<span>Field hockey</span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="volleyball sports_Icon"></i>
+										<span>Volleyball</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="right_Panel">
+					<div class="top">
+						<div class="breadCrumbAndLanguage">
+							<div class="bread_Crumb">
+								<ul>
+									<li class="sports">
+										<a href="">
+											<i class="sports_Icon soccer"></i>
+											<span>Futbol</span>
+										</a>
+									</li>
+									<li class="eur">
+										<a href="">
+											<span>Avrupa</span>
+										</a>
+									</li>
+									<li class="flag">
+										<a href="">
+											<i class="en flag_Icon"></i>
+											<span>England</span>
+										</a>
+									</li>
+									<li class="ligName dropdown_Box dropdown_Hover_But">
+										<a href="">
+											<span>Lig Bir 18/19</span>
+										</a>
+										<ul class="dropdown_Menu">
+											<li>
+												<a href="">
+													<span>Lig 1</span>	
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span>Lig 2</span>	
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<span>Lig 3</span>	
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="language">
+								<div class="backAndSelectLanguage">
+									<div class="back">
+										<a href=""> < Back</a>
+									</div>
+									<div class="language_Drop dropdown_Box">
+										<div class="dropdown_Hover_But">
+											<i style="background-image:url('img/statistics/flags.png');" class="flagss"></i>
+											<span>English</span>
+											<i class="fas fa-angle-right"></i>
+											<ul class="dropdown_Menu">
+												<li>
+													<a href="">
+														<span>English</span>	
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<span>Polski</span>	
+													</a>
+												</li>
+												<li>
+													<a href="">
+														<span>Magyar</span>	
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cent">
+						<div class="tabmenu_List">
+							<div class="title_List">
+								<ul>
+									<li class="active">
+										<a data-target="#overview" data-toggle="tab">Genel Görünüm</a>
+									</li>
+									<li>
+										<a data-target="#tables" data-toggle="tab">Sıralama</a>
+									</li>
+									<li>
+										<a data-target="#players" data-toggle="tab">Oyuncular</a>
+									</li>
+									<li>
+										<a data-target="#teams" data-toggle="tab">Takımlar</a>
+									</li>
+									<li>
+										<a data-target="#headtohead" data-toggle="tab">Başa Baş</a>
+									</li>
+									<li>
+										<a data-target="#fixtures" data-toggle="tab">Fikstür</a>
+									</li>
+									<li>
+										<a data-target="#archive" data-toggle="tab">Arşiv</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab_Info">
+								<div class="tab-content">
+									<div class="tab-pane active" id="overview">
+										<div class="overview_Info">
+											<div class="box">
+												<div class="leagueOneAndForm">
+													<div class="leagueOne">
+														<div class="title">
+															<h1>League One</h1>
+														</div>
+														<div class="s_Grouptitle">
+															<div class="item Lea_Po"><span>PO</span></div>
+															<div class="item Lea_Team"><span>Takım</span></div>
+															<div class="item Lea_P"><span>TO</span></div>
+															<div class="item Lea_W"><span>G</span></div>
+															<div class="item Lea_D"><span>B</span></div>
+															<div class="item Lea_L"><span>M</span></div>
+															<div class="item Lea_Goals"><span>Goller</span></div>
+															<div class="item Lea_DI"><span>FA</span></div>
+															<div class="item Lea_PO"><span>PO</span></div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Lea_Po"><span>1</span></div>
+															<div class="item Lea_Team"><img src="img/statistics/team_Icon.png" /><span>Accrington</span></div>
+															<div class="item Lea_P"><span>0</span></div>
+															<div class="item Lea_W"><span>0</span></div>
+															<div class="item Lea_D"><span>0</span></div>
+															<div class="item Lea_L"><span>0</span></div>
+															<div class="item Lea_Goals"><span>0:0</span></div>
+															<div class="item Lea_DI"><span>0</span></div>
+															<div class="item Lea_PO"><span>0</span></div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Lea_Po"><span>1</span></div>
+															<div class="item Lea_Team"><img src="img/statistics/team_Icon.png" /><span>Accrington</span></div>
+															<div class="item Lea_P"><span>0</span></div>
+															<div class="item Lea_W"><span>0</span></div>
+															<div class="item Lea_D"><span>0</span></div>
+															<div class="item Lea_L"><span>0</span></div>
+															<div class="item Lea_Goals"><span>0:0</span></div>
+															<div class="item Lea_DI"><span>0</span></div>
+															<div class="item Lea_PO"><span>0</span></div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Lea_Po"><span>1</span></div>
+															<div class="item Lea_Team"><img src="img/statistics/team_Icon.png" /><span>Accrington</span></div>
+															<div class="item Lea_P"><span>0</span></div>
+															<div class="item Lea_W"><span>0</span></div>
+															<div class="item Lea_D"><span>0</span></div>
+															<div class="item Lea_L"><span>0</span></div>
+															<div class="item Lea_Goals"><span>0:0</span></div>
+															<div class="item Lea_DI"><span>0</span></div>
+															<div class="item Lea_PO"><span>0</span></div>
+														</div>
+													</div>
+													<div class="Form">
+														<div class="title">
+															<h1>Form Tablosu</h1>
+														</div>
+														<div class="s_Grouptitle">
+															<div class="item Form_Po"><span>PO</span></div>
+															<div class="item Form_Team"><span>Takım</span></div>
+															<div class="item Form_Points"><span>Puanlar</span></div>
+															<div class="item Form_Space"><span>&nbsp;</span></div>
+															<div class="item Form_W"><span>W</span></div>
+															<div class="item Form_D"><span>D</span></div>
+															<div class="item Form_L"><span>L</span></div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Form_Po"><span>1</span></div>
+															<div class="item Form_Team"><img src="img/statistics/team_Icon.png" alt=""><span>Accrington</span></div>
+															<div class="item Form_Points"><span style="background-color:gray; width: 100%; height: 15px;  line-height:25px; border-radius:10px; display: block;"></span></div>
+															<div class="item Form_Space">
+																<span>14</span>
+															</div>
+															<div class="item Form_WDL">
+																<span style="background-color:green;width: 95%; height: 15px;  line-height:25px; border-radius:10px; display: block;"></span>
+															</div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Form_Po"><span>1</span></div>
+															<div class="item Form_Team"><img src="img/statistics/team_Icon.png" alt=""><span>Accrington</span></div>
+															<div class="item Form_Points"><span style="background-color:gray; width: 100%; height: 15px;  line-height:25px; border-radius:10px; display: block;"></span></div>
+															<div class="item Form_Space">
+																<span>14</span>
+															</div>
+															<div class="item Form_WDL">
+																<span style="background-color:green;width: 95%; height: 15px;  line-height:25px; border-radius:10px; display: block;"></span>
+															</div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Form_Po"><span>1</span></div>
+															<div class="item Form_Team"><img src="img/statistics/team_Icon.png" alt=""><span>Accrington</span></div>
+															<div class="item Form_Points"><span style="background-color:gray; width: 100%; height: 15px;  line-height:25px; border-radius:10px; display: block;"></span></div>
+															<div class="item Form_Space">
+																<span>14</span>
+															</div>
+															<div class="item Form_WDL">
+																<span style="background-color:green;width: 95%; height: 15px;  line-height:25px; border-radius:10px; display: block;"></span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div><br>
+											<div class="box">
+												<div class="ResultsAndFixtures">
+													<div class="result">
+														<div class="titleAndFiltre">
+															<div class="title">
+																<h1>Sonuçlar</h1>
+															</div>
+														</div><br>
+														<div class="s_Grouptitle">
+															<div class="item Da">
+																<span>TA</span>
+															</div>
+															
+															<div class="item Match">
+																<span>Maç</span>
+															</div>
+															<div class="item Space">
+																<span>&nbsp;</span>
+															</div>
+															<div class="img_Space item">
+																
+															</div>
+															<div class="One item">
+																<span>1</span>
+															</div>
+															<div class="X item">
+																<span>X</span>
+															</div>
+															<div class="Two item">
+																<span>2</span>
+															</div>
+															<div class="MS item">
+																<span>MS</span>
+															</div>
+															<div class="item Ro">
+																<span>RO</span>
+															</div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Da">
+																<span>05/05/18</span>
+															</div>
+															<div class="item Match">
+																<img src="img/statistics/team_Icon.png" alt="">
+															</div>
+															<div class="item Space">
+																<span>Swindon</span>
+																<span>- Accrington</span>
+															</div>
+															<div class="img_Space item">
+																<img src="img/statistics/team_Icon.png" alt="">
+															</div>
+															<div class="One item ">
+																<span>6.50</span>
+															</div>
+															<div class="X item ">
+																<span>5.50</span>
+															</div>
+															<div class="Two item ">
+																<span>1.20</span>
+															</div>
+															<div class="MS item">
+																<span>1.2</span>
+															</div>
+															<div class="item Ro">
+																<span>46</span>
+															</div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Da">
+																<span>05/05/18</span>
+															</div>
+															<div class="item Match">
+																<img src="img/statistics/team_Icon.png" alt="">
+															</div>
+															<div class="item Space">
+																<span>Swindon</span>
+																<span>- Accrington</span>
+															</div>
+															<div class="img_Space item">
+																<img src="img/statistics/team_Icon.png" alt="">
+															</div>
+															<div class="One item ">
+																<span>6.50</span>
+															</div>
+															<div class="X item ">
+																<span>5.50</span>
+															</div>
+															<div class="Two item ">
+																<span>1.20</span>
+															</div>
+															<div class="MS item">
+																<span>1.2</span>
+															</div>
+															<div class="item Ro">
+																<span>46</span>
+															</div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Da">
+																<span>05/05/18</span>
+															</div>
+															<div class="item Match">
+																<img src="img/statistics/team_Icon.png" alt="">
+															</div>
+															<div class="item Space">
+																<span>Swindon</span>
+																<span>- Accrington</span>
+															</div>
+															<div class="img_Space item">
+																<img src="img/statistics/team_Icon.png" alt="">
+															</div>
+															<div class="One item ">
+																<span>6.50</span>
+															</div>
+															<div class="X item ">
+																<span>5.50</span>
+															</div>
+															<div class="Two item ">
+																<span>1.20</span>
+															</div>
+															<div class="MS item">
+																<span>1.2</span>
+															</div>
+															<div class="item Ro">
+																<span>46</span>
+															</div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Da">
+																<span>05/05/18</span>
+															</div>
+															<div class="item Match">
+																<img src="img/statistics/team_Icon.png" alt="">
+															</div>
+															<div class="item Space">
+																<span>Swindon</span>
+																<span>- Accrington</span>
+															</div>
+															<div class="img_Space item">
+																<img src="img/statistics/team_Icon.png" alt="">
+															</div>
+															<div class="One item ">
+																<span>6.50</span>
+															</div>
+															<div class="X item ">
+																<span>5.50</span>
+															</div>
+															<div class="Two item ">
+																<span>1.20</span>
+															</div>
+															<div class="MS item">
+																<span>1.2</span>
+															</div>
+															<div class="item Ro">
+																<span>46</span>
+															</div>
+														</div>
+													</div>
+													<div class="fixtures">
+														<div class="titleAndFiltre">
+															<div class="title">
+																<h1>Fikstür</h1>
+															</div>
+															<div class="tabMenu">
+																<ul>
+																	<li class="active"><a href="">3 Yollu</a></li>
+																	<li><a href="">Handikap</a></li>
+																	<li><a href="">Alt/Üst</a></li>
+																</ul>
+															</div>
+														</div><br>
+														<div class="s_Grouptitle">
+																<div class="item Da">
+																	<span>TA</span>
+																</div>
+																
+																<div class="item Match">
+																	<span>Maç</span>
+																</div>
+																<div class="item Space">
+																	<span>&nbsp;</span>
+																</div>
+																<div class="img_Space item">
+																	
+																</div>
+																<div class="One item">
+																	<span>1</span>
+																</div>
+																<div class="X item">
+																	<span>X</span>
+																</div>
+																<div class="Two item">
+																	<span>2</span>
+																</div>
+																
+																<div class="item Ro">
+																	<span>HA</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<span>Swindon</span>
+																	<span>- Accrington</span>
+																</div>
+																<div class="img_Space item">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="One item bg_Black">
+																	<span>6.50</span>
+																</div>
+																<div class="X item bg_Black">
+																	<span>5.50</span>
+																</div>
+																<div class="Two item bg_Black">
+																	<span>1.20</span>
+																</div>
+																
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<span>Swindon</span>
+																	<span>- Accrington</span>
+																</div>
+																<div class="img_Space item">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="One item bg_Black">
+																	<span>6.50</span>
+																</div>
+																<div class="X item bg_Black">
+																	<span>5.50</span>
+																</div>
+																<div class="Two item bg_Black">
+																	<span>1.20</span>
+																</div>
+																
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<span>Swindon</span>
+																	<span>- Accrington</span>
+																</div>
+																<div class="img_Space item">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="One item bg_Black">
+																	<span>6.50</span>
+																</div>
+																<div class="X item bg_Black">
+																	<span>5.50</span>
+																</div>
+																<div class="Two item bg_Black">
+																	<span>1.20</span>
+																</div>
+																
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<span>Swindon</span>
+																	<span>- Accrington</span>
+																</div>
+																<div class="img_Space item">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="One item bg_Black">
+																	<span>6.50</span>
+																</div>
+																<div class="X item bg_Black">
+																	<span>5.50</span>
+																</div>
+																<div class="Two item bg_Black">
+																	<span>1.20</span>
+																</div>
+																
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+													</div>
+												</div>
+											</div><br>
+											<div class="box">
+												<div class="league_Summary">
+													<div class="title text-center">
+														<h1>Lig Özeti</h1>
+													</div>
+													<div class="_Row">
+														<div class="league_Brief">
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>Oynadığı Maç</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>98</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>İç Saha Galibiyeti</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>46%9%</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>Beraberlik</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>21.4%</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>Deplasman Galibiyeti</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>31.6%</span>
+																</div>
+															</div>
+														</div>
+														<div class="league_Brief">
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>Oynadığı Maç</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>98</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>İç Saha Galibiyeti</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>46%9%</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>Beraberlik</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>21.4%</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>Deplasman Galibiyeti</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>31.6%</span>
+																</div>
+															</div>
+														</div>
+														<div class="league_Brief">
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>Oynadığı Maç</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>98</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>İç Saha Galibiyeti</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>46%9%</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>Beraberlik</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>21.4%</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Sum_Info">
+																	<span>Deplasman Galibiyeti</span>
+																</div>
+																<div class="item Sum_Num">
+																	<span>31.6%</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div><br>
+											<div class="box">
+												<div class="top_GoalScores">
+													<div class="title">
+														<h1>Gol Krallığı</h1>
+													</div>
+													<div class="TableInfo">
+														<div class="s_Grouptitle">
+															<div class="item GS_Order"><span>Sıralama</span></div>
+															<div class="item GS_Player"><span>Oyuncu</span></div>
+															<div class="item GS_Team"><span>Takım</span></div>
+															<div class="item GS_Position"><span>Pozisyon</span></div>
+															<div class="item GS_Matches"><span>Maçlar</span></div>
+															<div class="item GS_Matches"><span>Goller</span></div>
+															<div class="item GS_Matches"><span>Penaltı</span></div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item GS_Order"><span>1</span></div>
+															<div class="item GS_Player"><img src="img/statistics/team_Icon.png"/><span>SERELLUS</span></div>
+															<div class="item GS_Team"><img src="img/statistics/team_Icon.png"/><span>BK Heacken</span></div>
+															<div class="item GS_Position"><span>Forvet</span></div>
+															<div class="item GS_Matches"><span>1</span></div>
+															<div class="item GS_Matches"><span>8</span></div>
+															<div class="item GS_Matches"><span>0</span></div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item GS_Order"><span>1</span></div>
+															<div class="item GS_Player"><img src="img/statistics/team_Icon.png"/><span>SERELLUS</span></div>
+															<div class="item GS_Team"><img src="img/statistics/team_Icon.png"/><span>BK Heacken</span></div>
+															<div class="item GS_Position"><span>Forvet</span></div>
+															<div class="item GS_Matches"><span>1</span></div>
+															<div class="item GS_Matches"><span>2</span></div>
+															<div class="item GS_Matches"><span>3</span></div>
+														</div>
+													</div>
+												</div>
+											</div><br>
+											<div class="box">
+												<div class="disciplinary_List">
+													<div class="title">
+														<h1>En Çok Kart Görenler</h1>
+													</div>
+													<div class="TableInfo">
+														<div class="s_Grouptitle">
+															<div class="item GS_Order"><span>Sıralama</span></div>
+															<div class="item GS_Player"><span>Oyuncu</span></div>
+															<div class="item GS_Team"><span>Takım</span></div>
+															<div class="item GS_Position"><span>Pozisyon</span></div>
+															<div class="item GS_Matches"><span>Maçlar</span></div>
+															<div class="item GS_Flag">
+																<i class="flag flag_1"></i>
+															</div>
+															<div class="item GS_Flag">
+																<i class="flag flag_2"></i>
+															</div>
+															<div class="item GS_Flag">
+																<i class="flag flag_3"></i>
+															</div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item GS_Order"><span>1</span></div>
+															<div class="item GS_Player"><img src="img/statistics/team_Icon.png"/><span>SERELLUS</span></div>
+															<div class="item GS_Team"><img src="img/statistics/team_Icon.png"/><span>BK Heacken</span></div>
+															<div class="item GS_Position"><span>Forvet</span></div>
+															<div class="item GS_Matches"><span>1</span></div>
+															<div class="item GS_Flag">
+																<span>1</span>
+															</div>
+															<div class="item GS_Flag">
+																<span>0</span>
+															</div>
+															<div class="item GS_Flag">
+																<span>0</span>
+															</div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item GS_Order"><span>1</span></div>
+															<div class="item GS_Player"><img src="img/statistics/team_Icon.png"/><span>SERELLUS</span></div>
+															<div class="item GS_Team"><img src="img/statistics/team_Icon.png"/><span>BK Heacken</span></div>
+															<div class="item GS_Position"><span>Forvet</span></div>
+															<div class="item GS_Matches"><span>1</span></div>
+															<div class="item GS_Flag">
+																<span>1</span>
+															</div>
+															<div class="item GS_Flag">
+																<span>0</span>
+															</div>
+															<div class="item GS_Flag">
+																<span>0</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+									<div class="tab-pane " id="tables">
+										<div class="tables_Info">
+											<div class="box">
+												<div class="top">
+													<div class="tabMenuAndSelect">
+														<div class="tabMenu_One">
+															<ul>
+																<li class="active"><a href="">Puan Durumu</a></li>
+																<li><a href="">Form Tablosu</a></li>
+																<li><a href="">Sonuç Matrisi</a></li>
+															</ul>
+														</div>
+														<div class="select">
+															<div class="dropdown_Box">
+																<div class="dropdown_Hover_But">
+																	<span>2018</span>
+																	<i class="fas fa-angle-right"></i>
+																	<ul class="dropdown_Menu">
+																		<li>
+																			<a href="">
+																				<span>2017</span>	
+																			</a>
+																		</li>
+																		<li>
+																			<a href="">
+																				<span>2016</span>	
+																			</a>
+																		</li>
+																		<li>
+																			<a href="">
+																				<span>2015</span>	
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="cent">
+													<div class="tabMenuAndSelect">
+														<div class="tabMenu_One">
+															<ul>
+																<li class="active"><a href="">Tüm Maçlar</a></li>
+																<li><a href="">İç Saha Maçları</a></li>
+																<li><a href="">Deplasman Maçları</a></li>
+																<li><a href="">Tamamı</a></li>
+																<li class="active"><a href="">Maç Sonucu</a></li>
+																<li><a href="">Devre</a></li>
+																<li><a href="">2.Devre</a></li>
+															</ul>
+														</div>
+														<div class="select">
+															<div class="dropdown_Box">
+																<div class="dropdown_Hover_But">
+																	<span>Hafta 16</span>
+																	<i class="fas fa-angle-right"></i>
+																	<ul class="dropdown_Menu">
+																		<li>
+																			<a href="">
+																				<span>Hafta 15</span>	
+																			</a>
+																		</li>
+																		<li>
+																			<a href="">
+																				<span>Hafta 14</span>	
+																			</a>
+																		</li>
+																		<li>
+																			<a href="">
+																				<span>Hafta 13</span>	
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="title">
+														<h1>League One</h1>
+													</div>
+													<div class="s_Grouptitle">
+														<div class="item T_Pos"><span>Poz</span></div>
+														<div class="item T_Team"><span>Takım</span></div>
+														<div class="item T_P"><span>Top.</span></div>
+														<div class="item T_W"><span>G</span></div>
+														<div class="item T_D"><span>B</span></div>
+														<div class="item T_L"><span>M</span></div>
+														<div class="item T_GF"><span>A</span></div>
+														<div class="item T_GA"><span>Y</span></div>
+														<div class="item T_DFF"><span>Fark</span></div>
+														<div class="item T_Points"><span>Puanlar</span></div>
+														<div class="item T_Space"><span>&nbsp;</span></div>
+													</div>
+													<div class="s_GroupInfo">
+														<div class="item T_Pos"><span>1</span></div>
+														<div class="item T_Team"><img src="img/statistics/team_Icon.png" alt=""><span>Accrington</span></div>
+														<div class="item T_P"><span>0</span></div>
+														<div class="item T_W"><span>0</span></div>
+														<div class="item T_D"><span>0</span></div>
+														<div class="item T_L"><span>0</span></div>
+														<div class="item T_GF"><span>0</span></div>
+														<div class="item T_GA"><span>0</span></div>
+														<div class="item T_DFF"><span>0</span></div>
+														<div class="item T_Points"><span>0</span></div>
+														<div class="item T_Space"><span>Şampiyonlar Ligi Ön Eleme</span></div>
+													</div>
+													<div class="s_GroupInfo">
+														<div class="item T_Pos"><span>1</span></div>
+														<div class="item T_Team"><img src="img/statistics/team_Icon.png" alt=""><span>Accrington</span></div>
+														<div class="item T_P"><span>0</span></div>
+														<div class="item T_W"><span>0</span></div>
+														<div class="item T_D"><span>0</span></div>
+														<div class="item T_L"><span>0</span></div>
+														<div class="item T_GF"><span>0</span></div>
+														<div class="item T_GA"><span>0</span></div>
+														<div class="item T_DFF"><span>0</span></div>
+														<div class="item T_Points"><span>0</span></div>
+														<div class="item T_Space"><span>Promotion</span></div>
+													</div>
+													<div class="s_GroupInfo">
+														<div class="item T_Pos"><span>1</span></div>
+														<div class="item T_Team"><img src="img/statistics/team_Icon.png" alt=""><span>Accrington</span></div>
+														<div class="item T_P"><span>0</span></div>
+														<div class="item T_W"><span>0</span></div>
+														<div class="item T_D"><span>0</span></div>
+														<div class="item T_L"><span>0</span></div>
+														<div class="item T_GF"><span>0</span></div>
+														<div class="item T_GA"><span>0</span></div>
+														<div class="item T_DFF"><span>0</span></div>
+														<div class="item T_Points"><span>0</span></div>
+														<div class="item T_Space"><span>Promotion</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane " id="players">
+										<div class="players_Info">
+											<div class="box">
+												<div class="teamAndWycombe">
+													<div class="team">
+														<div class="title">
+															<h1>Takım</h1>
+														</div>
+														<div class="list">
+															<a href=""></a>
+															<ul>
+																<li class="active"><a href="">Burton</a></li>
+																<li><a href="">Chartlon</a></li>
+																<li><a href="">Coventry</a></li>
+																<li><a href="">Wycombe</a></li>
+															</ul>
+															<a href=""></a>
+														</div>
+													</div>
+													<div class="wycombe">
+														<div class="top">
+															<div class="title">
+																<h1>Wycombe</h1>
+															</div>
+															<div class="wy_Info">
+																<div class="Left">
+																	<div class="subTitle">
+																		<h2>League One</h2>
+																	</div>
+																	<div class="managerInfo">
+																		<span>Teknik Direktör :</span>
+																		<span>Gareth Ainsworth</span>
+																	</div>
+																	<div class="managerInfo">
+																		<span>Stadyum :</span>
+																		<span>Gareth </span>
+																	</div>
+																</div>
+																<div class="Right">
+																	<div class="flatandIcons">
+																		<img src="img/statistics/1.png" alt="">
+																		<img src="img/statistics/2.png" alt="">
+																		<img src="img/statistics/3.png" alt="">
+																	</div>
+																	<div class="tabMenu">
+																		<ul>
+																			<li class="active"><a href="">Tümü</a></li>
+																			<li><a href="">Kaleci</a></li>
+																			<li><a href="">Savunma</a></li>
+																			<li><a href="">Orta Saha</a></li>
+																			<li><a href="">Hücumlar</a></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>	
+														</div>
+														<div class="cent">
+															<div class="table_Info">
+																<div class="s_Grouptitle">
+																	<div class="item Play_No">
+																		<span>Numara</span>
+																	</div>
+																	<div class="item Play_Name">
+																		<span>Adı</span>
+																	</div>
+																	<div class="item Play_Position">
+																		<span>Pozisyon</span>
+																	</div>
+																	<div class="item Play_DateOf">
+																		<span>Doğum Tarihi</span>
+																	</div>
+																</div>
+																<div class="s_GroupInfo">
+																	<div class="item Play_No">
+																		<span>30</span>
+																	</div>
+																	<div class="item Play_Name">
+																		<img src="img/statistics/team_Icon.png" alt="">
+																		<span>Ryan Allsop</span>
+																	</div>
+																	<div class="item Play_Position">
+																		<span>GK</span>
+																	</div>
+																	<div class="item Play_DateOf">
+																		<span>30/01/1986</span>
+																	</div>
+																</div>
+																<div class="s_GroupInfo">
+																	<div class="item Play_No">
+																		<span>30</span>
+																	</div>
+																	<div class="item Play_Name">
+																		<img src="img/statistics/team_Icon.png" alt="">
+																		<span>Ryan Allsop</span>
+																	</div>
+																	<div class="item Play_Position">
+																		<span>GK</span>
+																	</div>
+																	<div class="item Play_DateOf">
+																		<span>30/01/1986</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div><br>
+											<div class="box">
+												<div class="facts">
+													<div class="top">
+														<div class="tabMenu">
+															<ul>
+																<li class="active"><a href="">Bilgi</a></li>
+																<li><a href="">Transfer Geçmişi</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="cent">
+														<div class="team_Detail">
+															<div class="panel_Left">
+																<div class="imgAndName">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																	<span>Sido Jombati</span>
+																</div>
+																<div class="activeTeam">
+																	<img src="img/statistics/2Number.png" alt="">
+																</div>
+															</div>
+															<div class="panel_Right">
+																<div class="team_Table">
+																	<div class="s_Grouptitle">
+																		<div class="item Deta_Space"><span>&nbsp;</span></div>
+																		<div class="item Deta_Facts"><span>Bilgi</span></div>
+																	</div>
+																	<div class="s_GroupInfo">
+																		<div class="item Deta_Space"><span>Ad Soyad:</span></div>
+																		<div class="item Deta_Facts"><span>Jombati,Sido</span></div>
+																	</div>
+																	<div class="s_GroupInfo">
+																		<div class="item Deta_Space"><span>Ülke:</span></div>
+																		<div class="item Deta_Facts"><span>Portugal</span></div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div><br>
+											<div class="box">
+
+												<div class="teamDetailTable">
+													<div class="date">
+														<div class="tabMenu">
+															<ul>
+																<li class="active"><a href="">FA Cup 2017/18</a></li>
+															</ul>
+														</div>
+													</div>
+													<div class="TableInfo">
+														<div class="s_Grouptitle">
+															<div class="item Play_Date"><span>Tarih</span></div>
+															<div class="item Play_Round"><span>Hafta</span></div>
+															<div class="item Play_Against"><span>Karşı Takım</span></div>
+															<div class="item Play_Result"><span>Sonuç</span></div>
+															<div class="item Play_Starting"><span>İlk 11</span></div>
+															<div class="item Play_In"><span>Gir.</span></div>
+															<div class="item Play_Out"><span>Çık</span></div>
+															<div class="item Play_Minutes"><span>Oynadığı Süre</span></div>
+															<div class="item Play_Goals"><span>Goller</span></div>
+															<div class="item Play_Flag">
+																<i class="flag flag_1"></i>
+															</div>
+															<div class="item Play_Flag">
+																<i class="flag flag_2"></i>
+															</div>
+															<div class="item Play_Flag">
+																<i class="flag flag_3"></i>
+															</div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Play_Date"><span>07/07/18</span></div>
+															<div class="item Play_Round"><span>Hafta 12</span></div>
+															<div class="item Play_Against"><span>Leatherhead</span></div>
+															<div class="item Play_Result"><span>3:1</span></div>
+															<div class="item Play_Starting"><span>1</span></div>
+															<div class="item Play_In"><span>0</span></div>
+															<div class="item Play_Out"><span>0</span></div>
+															<div class="item Play_Minutes"><span>90</span></div>
+															<div class="item Play_Goals"><span>0</span></div>
+															<div class="item Play_Flag">
+																<span>1</span>
+															</div>
+															<div class="item Play_Flag">
+																<span>0</span>
+															</div>
+															<div class="item Play_Flag">
+																<span>0</span>
+															</div>
+														</div>
+														<div class="s_GroupInfo">
+															<div class="item Play_Date"><span>Sum</span></div>
+															<div class="item Play_Round"><span>Round 2</span></div>
+															<div class="item Play_Against"><span>Leatherhead</span></div>
+															<div class="item Play_Result"><span>3:1</span></div>
+															<div class="item Play_Starting"><span>1</span></div>
+															<div class="item Play_In"><span>0</span></div>
+															<div class="item Play_Out"><span>0</span></div>
+															<div class="item Play_Minutes"><span>90</span></div>
+															<div class="item Play_Goals"><span>0</span></div>
+															<div class="item Play_Flag">
+																<span>1</span>
+															</div>
+															<div class="item Play_Flag">
+																<span>0</span>
+															</div>
+															<div class="item Play_Flag">
+																<span>0</span>
+															</div>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane " id="teams">
+										<div class="teams">
+											<div class="top">
+												<div class="box">
+													<div class="teamNameAndFlag">
+														<div class="teamName">
+															<div class="Left">
+																<img src="img/statistics/187.png" alt="">
+															</div>
+															<div class="Right">
+																<div class="Name">
+																	<h2>Accrington</h2>
+																</div>
+																<div class="subTitle">
+																	<span>League One</span>
+																</div>
+																<div class="manager">
+																	<span>Teknik Direktör:</span>
+																	<span>John Coleman</span>
+																</div>
+																<div class="manager">
+																	<span>Stadyum:</span>
+																	<span>John Coleman</span>
+																</div>
+															</div>
+														</div>
+														<div class="Flag">
+															<img src="img/statistics/1.png" alt="">
+															<img src="img/statistics/3.png" alt="">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="cent">
+												<div class="box">
+													<div class="topTabMenu">
+														<ul>
+															<li class="active"><a href="">League One</a></li>
+															<li><a href="">FA Cup</a></li>
+															<li><a href="">EFL Cup</a></li>
+															<li><a href="">Football League Trophy</a></li>
+														</ul>
+													</div>
+													<div class="leagueAndPerformance">
+														<div class="league">
+															<div class="title">
+																<h1>League One</h1>
+															</div>
+															<div class="s_Grouptitle">
+																<div class="item Lea_PO"><span>PO</span></div>
+																<div class="item Lea_Team"><span>Team</span></div>
+																<div class="item Lea_P"><span>P</span></div>
+																<div class="item Lea_W"><span>W</span></div>
+																<div class="item Lea_D"><span>D</span></div>
+																<div class="item Lea_L"><span>L</span></div>
+																<div class="item Lea_Goals"><span>Goals</span></div>
+																<div class="item Lea_DI"><span>DI</span></div>
+																<div class="item Lea_PO"><span>PO</span></div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Lea_PO"><span>1</span></div>
+																<div class="item Lea_Team"><img src="img/statistics/team_Icon.png" alt=""><span>Accrington</span></div>
+																<div class="item Lea_P"><span>0</span></div>
+																<div class="item Lea_W"><span>0</span></div>
+																<div class="item Lea_D"><span>0</span></div>
+																<div class="item Lea_L"><span>0</span></div>
+																<div class="item Lea_Goals"><span>0:0</span></div>
+																<div class="item Lea_DI"><span>0</span></div>
+																<div class="item Lea_PO"><span>0</span></div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Lea_PO"><span>1</span></div>
+																<div class="item Lea_Team"><img src="img/statistics/team_Icon.png" alt=""><span>Accrington</span></div>
+																<div class="item Lea_P"><span>0</span></div>
+																<div class="item Lea_W"><span>0</span></div>
+																<div class="item Lea_D"><span>0</span></div>
+																<div class="item Lea_L"><span>0</span></div>
+																<div class="item Lea_Goals"><span>0:0</span></div>
+																<div class="item Lea_DI"><span>0</span></div>
+																<div class="item Lea_PO"><span>0</span></div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Lea_PO"><span>1</span></div>
+																<div class="item Lea_Team"><img src="img/statistics/team_Icon.png" alt=""><span>Accrington</span></div>
+																<div class="item Lea_P"><span>0</span></div>
+																<div class="item Lea_W"><span>0</span></div>
+																<div class="item Lea_D"><span>0</span></div>
+																<div class="item Lea_L"><span>0</span></div>
+																<div class="item Lea_Goals"><span>0:0</span></div>
+																<div class="item Lea_DI"><span>0</span></div>
+																<div class="item Lea_PO"><span>0</span></div>
+															</div>
+														</div>
+														<div class="performance">
+															<div class="title">
+																<h1>Performans</h1>
+															</div>
+															<div class="rating">
+																<div class="allMatches">
+																	<span>Tüm Maçlar</span>
+																	<ul>
+																		<li><a href=""></a></li>
+																		<li><a href=""></a></li>
+																		<li><a href=""></a></li>
+																		<li><a href=""></a></li>
+																		<li><a href=""></a></li>
+																		<li><a href=""></a></li>
+																	</ul>
+																</div>
+																<div class="homeAndAway">
+																	<div class="home">
+																		<span>Ev Sahibi</span>
+																		<ul>
+																			<li><a href=""></a></li>
+																			<li><a href=""></a></li>
+																			<li><a href=""></a></li>
+																			<li><a href=""></a></li>
+																			<li><a href=""></a></li>
+																			<li><a href=""></a></li>
+																		</ul>
+																	</div>
+																	<div class="away">
+																		<span>Deplasman</span>
+																		<ul>
+																			<li><a href=""></a></li>
+																			<li><a href=""></a></li>
+																			<li><a href=""></a></li>
+																			<li><a href=""></a></li>
+																			<li><a href=""></a></li>
+																			<li><a href=""></a></li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="img_Rating">
+																	<img src="img/statistics/barometer_black.png" alt="">
+																	<span>0%</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="resultAndFixtures">
+														<div class="result">
+															<div class="title">
+																<h1>Sonuçlar</h1>
+															</div>
+															<div class="s_Grouptitle">
+																<div class="item Da">
+																	<span>TA</span>
+																</div>
+																
+																<div class="item Match">
+																	<span>Maç</span>
+																</div>
+																<div class="item Space">
+																	<span>&nbsp;</span>
+																</div>
+																<div class="img_Space item">
+																	
+																</div>
+																<div class="MS item">
+																	<span>MS</span>
+																</div>
+																<div class="item Ro">
+																	<span>HA</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<span>Swindon</span>
+																	<span>- Accrington</span>
+																</div>
+																<div class="img_Space item">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="MS item">
+																	<span>1.2</span>
+																</div>
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<span>Swindon</span>
+																	<span>- Accrington</span>
+																</div>
+																<div class="img_Space item">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="MS item">
+																	<span>1.2</span>
+																</div>
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+
+														</div>
+														<div class="fixtures">
+															<div class="title">
+																<h1>Fikstür</h1>
+															</div>
+															<div class="table_Info">
+																<div class="s_Grouptitle">
+																	<div class="item Fix_Da">
+																		<span>TA</span>
+																	</div>
+																	<div class="item Fix_Match">
+																		<span>Maç</span>
+																	</div>
+																	<div class="item Fix_One">
+																		<span>1</span>
+																	</div>
+																	<div class="item Fix_X">
+																		<span>X</span>
+																	</div>
+																	<div class="item Fix_Two">
+																		<span>2</span>
+																	</div>
+																	<div class="item Fix_Ro">
+																		<span>HA</span>
+																	</div>
+																</div>
+																<div class="s_GroupInfo">
+																	<div class="item Fix_Da">
+																		<span>04/08/18 15:00</span>
+																	</div>
+																	<div class="item Fix_Match">
+																		<div class="Inner">
+																			<img src="img/statistics/team_Icon.png" alt="">
+																			<span>Accrington - Gillingham</span>
+																			<img src="img/statistics/team_Icon.png" alt="">
+																		</div>
+																	</div>
+																	<div class="item Fix_One bg_Black">
+																		<span>2.30</span>
+																	</div>
+																	<div class="item Fix_X bg_Black">
+																		<span>3.60</span>
+																	</div>
+																	<div class="item Fix_Two bg_Black">
+																		<span>2.80</span>
+																	</div>
+																	<div class="item Fix_Ro ">
+																		<span>1</span>
+																	</div>
+																</div>
+																<div class="s_GroupInfo">
+																	<div class="item Fix_Da">
+																		<span>04/08/18 15:00</span>
+																	</div>
+																	<div class="item Fix_Match">
+																		<div class="Inner">
+																			<img src="img/statistics/team_Icon.png" alt="">
+																			<span>Accrington - Gillingham</span>
+																			<img src="img/statistics/team_Icon.png" alt="">
+																		</div>
+																	</div>
+																	<div class="item Fix_One bg_Black">
+																		<span>2.30</span>
+																	</div>
+																	<div class="item Fix_X bg_Black">
+																		<span>3.60</span>
+																	</div>
+																	<div class="item Fix_Two bg_Black">
+																		<span>2.80</span>
+																	</div>
+																	<div class="item Fix_Ro ">
+																		<span>1</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="topListAndSquad">
+														<div class="toplist">
+															<div class="title">
+																<h1>En İyiler</h1>
+															</div>
+															<div class="tabMenu">
+																<ul>
+																	<li class="active"><a href="">Goller</a></li>
+																	<li><a href="">Kartlar</a></li>
+																	<li><a href="">Asisstler</a></li>
+																	<li><a href="">Sakat Oyuncular</a></li>
+																</ul>
+															</div>
+															<div class="s_Grouptitle">
+																<div class="item Best_SI">
+																	<span>SI</span>
+																</div>
+																<div class="item Best_Player">
+																	<span>Oyuncu</span>
+																</div>
+																<div class="item Best_Position">
+																	<span>Pozisyon</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>MA</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>GO</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>PE</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Best_SI">
+																	<span>1</span>
+																</div>
+																<div class="item Best_Player">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																	<span>Dibba,Pa</span>
+																</div>
+																<div class="item Best_Position">
+																	<span>Forvet</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>10</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>7</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>0</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Best_SI">
+																	<span>1</span>
+																</div>
+																<div class="item Best_Player">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																	<span>Dibba,Pa</span>
+																</div>
+																<div class="item Best_Position">
+																	<span>Forvet</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>10</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>7</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>0</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Best_SI">
+																	<span>1</span>
+																</div>
+																<div class="item Best_Player">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																	<span>Dibba,Pa</span>
+																</div>
+																<div class="item Best_Position">
+																	<span>Forvet</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>10</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>7</span>
+																</div>
+																<div class="item Best_MGP">
+																	<span>0</span>
+																</div>
+															</div>
+														</div>
+														<div class="squad">
+															<div class="title">
+																<h1>Kadrolar</h1>
+															</div>
+															<div class="tabMenu">
+																<ul>
+																	<li class="active"><a href="">Tüm</a></li>
+																	<li><a href="">Kaleci</a></li>
+																	<li><a href="">Savunma</a></li>
+																</ul>
+															</div>
+															<div class="table_Info">
+																<div class="s_Grouptitle">
+																	<div class="item Sq_No">
+																		<span>NUM</span>
+																	</div>
+																	<div class="item Sq_Name">
+																		<span>ADI</span>
+																	</div>
+																	<div class="item Sq_Position">
+																		<span>Pozisyon</span>
+																	</div>
+																	<div class="item Sq_DOB">
+																		<span>DT</span>
+																	</div>
+																</div>
+																<div class="s_GroupInfo">
+																	<div class="item Sq_No">
+																		<span>13</span>
+																	</div>
+																	<div class="item Sq_Name">
+																		<img src="img/statistics/team_Icon.png" alt="">
+																		<span>Nathan Wolland</span>
+																	</div>
+																	<div class="item Sq_Position">
+																		<span>Position</span>
+																	</div>
+																	<div class="item Sq_DOB">
+																		<span>DOB</span>
+																	</div>
+																</div>
+																<div class="s_GroupInfo">
+																	<div class="item Sq_No">
+																		<span>13</span>
+																	</div>
+																	<div class="item Sq_Name">
+																		<img src="img/statistics/team_Icon.png" alt="">
+																		<span>Nathan Wolland</span>
+																	</div>
+																	<div class="item Sq_Position">
+																		<span>Position</span>
+																	</div>
+																	<div class="item Sq_DOB">
+																		<span>DOB</span>
+																	</div>
+																</div>
+																<div class="s_GroupInfo">
+																	<div class="item Sq_No">
+																		<span>13</span>
+																	</div>
+																	<div class="item Sq_Name">
+																		<img src="img/statistics/team_Icon.png" alt="">
+																		<span>Nathan Wolland</span>
+																	</div>
+																	<div class="item Sq_Position">
+																		<span>Position</span>
+																	</div>
+																	<div class="item Sq_DOB">
+																		<span>DOB</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane " id="headtohead">
+										<div class="headtohead">
+											<div class="box">
+												<div class="time">
+													<span>04/08/2018 12:30</span>
+												</div>
+												<div class="standartAndCharlton">
+													<div class="standart">
+														<div class="dropdown_Box">
+															<div class="dropdown_Hover_But">
+																<span>Hammanty IF</span>
+																<i class="fas fa-angle-right"></i>
+																<ul class="dropdown_Menu">
+																	<li>
+																		<a href="">
+																			<span>Hammanty</span>	
+																		</a>
+																	</li>
+																	<li>
+																		<a href="">
+																			<span>Hammanty</span>	
+																		</a>
+																	</li>
+																	<li>
+																		<a href="">
+																			<span>Hammanty</span>	
+																		</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="charlton">
+														<div class="dropdown_Box">
+															<div class="dropdown_Hover_But">
+																<span>Östersund FK</span>
+																<i class="fas fa-angle-right"></i>
+																<ul class="dropdown_Menu">
+																	<li>
+																		<a href="">
+																			<span>Östersund</span>	
+																		</a>
+																	</li>
+																	<li>
+																		<a href="">
+																			<span>Östersund</span>	
+																		</a>
+																	</li>
+																	<li>
+																		<a href="">
+																			<span>Östersund</span>	
+																		</a>
+																	</li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="flagAndMeetings">
+													<div class="flag_1">
+														<i class="Left_Icon"></i>
+														<img src="img/statistics/team_1.png" alt="">
+													</div>
+													<div class="meetings">
+														<div class="tit">
+															<span>Son Karşılaşmaları</span>
+														</div>
+														<div class="answerPercentage">
+															<div class="homeScore item" style="width:20%;">
+																&nbsp;
+															</div>
+															<div class="centerBar item" style="width:120px">
+																<span>2:0</span>
+															</div>
+															<div class="awayScore item" style="width:5%;">
+																&nbsp;
+															</div>
+														</div>
+														<div class="answerPercentage">
+															<div class="homeScore item" style="width:5%;">
+																&nbsp;
+															</div>
+															<div class="centerBar item" style="width:120px">
+																<span>2:0</span>
+															</div>
+															<div class="awayScore item" style="width:20%;">
+																&nbsp;
+															</div>
+														</div>
+														<div class="answerPercentage">
+															<div class="homeScore item" style="width:10%;">
+																&nbsp;
+															</div>
+															<div class="centerBar item" style="width:120px">
+																<span>2:0</span>
+															</div>
+															<div class="awayScore item" style="width:10%;">
+																&nbsp;
+															</div>
+														</div>
+													</div>
+													<div class="flag_2">
+														<i class="Right_Icon"></i>
+														<img src="img/statistics/team_2.png" alt="">
+													</div>
+												</div>
+												<div class="showExp">
+													<span>Açıklamaları Göster</span>
+												</div>
+											</div>
+											<div class="performance_Box">
+												<div class="box Left">
+													<div class="item tit">
+														<span>Performans</span>
+													</div>
+													<div class="item perfo_List">
+														<ul>
+															<li><a style="background-color: #219e23;">W</a></li>
+															<li><a style="background-color:#d62d2d;">L</a></li>
+															<li><a style="background-color:#d62d2d;">L</a></li>
+															<li><a style="background-color:#f7d823;">D</a></li>
+															<li><a style="background-color:#f7d823;">D</a></li>
+															<li><a style="background-color:#f7d823;">D</a></li>
+															<li><a style="background-color:#d62d2d;">W</a></li>
+														</ul>
+													</div>
+													<div class="item degree">
+														<i class="icon"></i>
+														<span>36%</span>
+													</div>
+												</div>
+												<div class="box Right">
+													<div class="item tit">
+														<span>Performans</span>
+													</div>
+													<div class="item perfo_List">
+														<ul>
+															<li><a style="background-color:#d62d2d;">L</a></li>
+															<li><a style="background-color:#d62d2d;">L</a></li>
+															<li><a style="background-color:#d62d2d;">L</a></li>
+															<li><a style="background-color:#179519;">W</a></li>
+															<li><a style="background-color:#179519;">W</a></li>
+															<li><a style="background-color:#179519;">W</a></li>
+															<li><a style="background-color:#d62d2d;">L</a></li>
+														</ul>
+													</div>
+													<div class="item degree">
+														<i class="icon"></i>
+														<span>36%</span>
+													</div>
+												</div>
+											</div>
+											<div class="team_Box">
+												<div class="box">
+													<div class="Left">
+														<div class="top">
+															<div class="top_Left">
+																<ul>
+																	<li class="active"><a href="">3 Yollu</a></li>
+																	<li><a href="">Handicap</a></li>
+																	<li><a href="">Altı/Üssü</a></li>
+																</ul>
+															</div>
+															<div class="top_Right">
+																<ul>
+																	<li class="active"><a href="">Son 5</a></li>
+																	<li><a href="">Sonraki 5</a></li>
+																</ul>
+															</div>
+														</div>
+														<div class="cent">
+															<div class="s_Grouptitle">
+																<div class="item Da">
+																	<span>TA</span>
+																</div>
+																<div class="item To">
+																	<span>TU</span>
+																</div>
+																<div class="item Match">
+																	<span>Maç</span>
+																</div>
+																<div class="item Space">
+																	<span>&nbsp;</span>
+																</div>
+																<div class="item Ft">
+																	<span>MS</span>
+																</div>
+																<div class="item Ro">
+																	<span>HA</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																<div class="item To">
+																	<span>LT</span>
+																</div>
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<b>Swindon</b>
+																	<span>- Accrington</span>
+																</div>
+																<div class="item Ft">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																	<span>3:0</span>
+																</div>
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																<div class="item To">
+																	<span>LT</span>
+																</div>
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<b>Swindon</b>
+																	<span>- Accrington</span>
+																</div>
+																<div class="item Ft">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																	<span>3:0</span>
+																</div>
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																<div class="item To">
+																	<span>LT</span>
+																</div>
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<b>Swindon</b>
+																	<span>- Accrington</span>
+																</div>
+																<div class="item Ft">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																	<span>3:0</span>
+																</div>
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																<div class="item To">
+																	<span>LT</span>
+																</div>
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<b>Swindon</b>
+																	<span>- Accrington</span>
+																</div>
+																<div class="item Ft">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																	<span>3:0</span>
+																</div>
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div> 
+														</div>
+													</div>
+												</div>
+												<div class="box">
+													<div class="Right">	
+														<div class="top">
+															<div class="top_Left">
+																<ul>
+																	<li class="active"><a href="">3 Yollu</a></li>
+																	<li><a href="">Handicap</a></li>
+																	<li><a href="">Altı/Üssü</a></li>
+																</ul>
+															</div>
+															<div class="top_Right">
+																<ul>
+																	<li class="active"><a href="">Son 5</a></li>
+																	<li><a href="">Sonraki 5</a></li>
+																</ul>
+															</div>
+														</div>
+														<div class="cent">
+															<div class="s_Grouptitle">
+																<div class="item Da">
+																	<span>TA</span>
+																</div>
+																<div class="item To">
+																	<span>TU</span>
+																</div>
+																<div class="item Match">
+																	<span>Maç</span>
+																</div>
+																<div class="item Space">
+																	<span>&nbsp;</span>
+																</div>
+																<div class="img_Space item">
+																	
+																</div>
+																<div class="One item">
+																	<span>1</span>
+																</div>
+																<div class="X item">
+																	<span>X</span>
+																</div>
+																<div class="Two item">
+																	<span>2</span>
+																</div>
+																<div class="item Ft">
+																	<span>FT</span>
+																</div>
+																<div class="item Ro">
+																	<span>RO</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																<div class="item To">
+																	<span>LT</span>
+																</div>
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<b>Swindon</b>
+																	<span>- Accrington</span>
+																</div>
+																<div class="img_Space item">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="One item">
+																	<span>6.50</span>
+																</div>
+																<div class="X item">
+																	<span>5.50</span>
+																</div>
+																<div class="Two item">
+																	<span>1.20</span>
+																</div>
+																<div class="item Ft">
+																	<span>3:0</span>
+																</div>
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																<div class="item To">
+																	<span>LT</span>
+																</div>
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<b>Swindon</b>
+																	<span>- Accrington</span>
+																</div>
+																<div class="img_Space item">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="One item">
+																	<span>6.50</span>
+																</div>
+																<div class="X item">
+																	<span>5.50</span>
+																</div>
+																<div class="Two item">
+																	<span>1.20</span>
+																</div>
+																<div class="item Ft">
+																	<span>3:0</span>
+																</div>
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																<div class="item To">
+																	<span>LT</span>
+																</div>
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<b>Swindon</b>
+																	<span>- Accrington</span>
+																</div>
+																<div class="img_Space item">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="One item">
+																	<span>6.50</span>
+																</div>
+																<div class="X item">
+																	<span>5.50</span>
+																</div>
+																<div class="Two item">
+																	<span>1.20</span>
+																</div>
+																<div class="item Ft">
+																	<span>3:0</span>
+																</div>
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Da">
+																	<span>05/05/18</span>
+																</div>
+																<div class="item To">
+																	<span>LT</span>
+																</div>
+																<div class="item Match">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="item Space">
+																	<b>Swindon</b>
+																	<span>- Accrington</span>
+																</div>
+																<div class="img_Space item">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																</div>
+																<div class="One item">
+																	<span>6.50</span>
+																</div>
+																<div class="X item">
+																	<span>5.50</span>
+																</div>
+																<div class="Two item">
+																	<span>1.20</span>
+																</div>
+																<div class="item Ft">
+																	<span>3:0</span>
+																</div>
+																<div class="item Ro">
+																	<span>46</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="team_Box">
+												<div class="box">
+													<div class="Left">
+														<div class="circle">
+															<div class="tabMenu">
+																<ul>
+																	<li class="active"><a href="">Tarihçe</a></li>
+																	<li><a href="">Detay</a></li>
+																</ul>
+															</div>
+															<div class="buttons_Circle">
+																<div class="One item">
+																	<img src="img/statistics/6.png" alt="">
+																	<span>Burton <br>Wins</span>
+																</div>
+																<div class="Two item">
+																	<img src="img/statistics/1_Gri.png" alt="">
+																	<span>Beraberlik</span>
+																</div>
+																<div class="Thr item">
+																	<img src="img/statistics/1_Blue.png" alt="">
+																	<span>Rochdale <br>Wins</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="box">
+													<div class="Right">
+														<div class="circle">
+															<div class="tabMenu">
+																<span>Goller</span>
+																<ul>
+																	<li class="active"><a href="">Goller</a></li>
+																	<li><a href="">Asistler</a></li>
+																	<li><a href="">Sakat Oyuncular</a></li>
+																</ul>
+															</div>
+															<div class="circle_Table">
+																<div class="s_Grouptitle">
+																	<div class="Goal_top">
+																		<div class="item Player">
+																			<span>Stromsgodset</span>
+																		</div>
+																		<div class="item ImgOneAndTwo">
+																			<img src="img/statistics/headteam1.png" alt="">
+																		</div>
+																		<div class="item ImgOneAndTwo">
+																			<img src="img/statistics/headteam2.png" alt="">
+																		</div>
+																		<div class="item Krsin">
+																			<span>Krsintland BK</span>
+																		</div>
+																	</div>
+																	<div class="Goal_bot">
+																		<div class="item Player">
+																			<span>Oyuncu</span>
+																		</div>
+																		<div class="item ImgOneAndTwo">
+																			<span>Goller</span>
+																		</div>
+																		<div class="item ImgOneAndTwo">
+																			<span>Goller</span>
+																		</div>
+																		<div class="item Krsin">
+																			<span>Oyuncu</span>
+																		</div>
+																	</div>
+																</div>
+																<div class="s_GroupInfo">
+																	<div class="item Player">
+																		<span>Pedersen Marjus</span>
+																	</div>
+																	<div class="item ImgOneAndTwo">
+																		<span>11</span>
+																	</div>
+																	<div class="item ImgOneAndTwo">
+																		<span>7</span>
+																	</div>
+																	<div class="item Krsin">
+																		<span>Bamba,Bye</span>
+																	</div>
+																</div>
+																<div class="s_GroupInfo">
+																	<div class="item Player">
+																		<span>Pedersen Marjus</span>
+																	</div>
+																	<div class="item ImgOneAndTwo">
+																		<span>11</span>
+																	</div>
+																	<div class="item ImgOneAndTwo">
+																		<span>7</span>
+																	</div>
+																	<div class="item Krsin">
+																		<span>Bamba,Bye</span>
+																	</div>
+																</div>
+																<div class="s_GroupInfo">
+																	<div class="item Player">
+																		<span>Pedersen Marjus</span>
+																	</div>
+																	<div class="item ImgOneAndTwo">
+																		<span>11</span>
+																	</div>
+																	<div class="item ImgOneAndTwo">
+																		<span>7</span>
+																	</div>
+																	<div class="item Krsin">
+																		<span>Bamba,Bye</span>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="team_Box">
+												<div class="box">
+													<div class="Left">
+														<div class="tabMenu">
+															<ul>
+																<li class="active"><a href="">Puan Durumu</a></li>
+																<li><a href="">Form Tablosu</a></li>
+															</ul>
+														</div>
+														<div class="Table">
+															<div class="s_Grouptitle">
+																<div class="item Pos">
+																	<span>Poz</span>
+																</div>
+																<div class="item Team">
+																	<span>Takım</span>
+																</div>
+																<div class="item P">
+																	<span>P</span>
+																</div>
+																<div class="item W">
+																	<span>W</span>
+																</div>
+																<div class="item D">
+																	<span>D</span>
+																</div>
+																<div class="item L">
+																	<span>L</span>
+																</div>
+																<div class="item Goals">
+																	<span>Goller</span>
+																</div>
+																<div class="item DIFF">
+																	<span>Fark</span>
+																</div>
+																<div class="item Points">
+																	<span>Puanlar</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Pos">
+																	<span>1</span>
+																</div>
+																<div class="item Team">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																	<span>Burton</span>
+																</div>
+																<div class="item P">
+																	<span>0</span>
+																</div>
+																<div class="item W">
+																	<span>0</span>
+																</div>
+																<div class="item D">
+																	<span>0</span>
+																</div>
+																<div class="item L">
+																	<span>0</span>
+																</div>
+																<div class="item Goals">
+																	<span>0,0</span>
+																</div>
+																<div class="item DIFF">
+																	<span>0,0</span>
+																</div>
+																<div class="item Points">
+																	<span>0</span>
+																</div>
+															</div>
+															<div class="s_GroupInfo">
+																<div class="item Pos">
+																	<span>1</span>
+																</div>
+																<div class="item Team">
+																	<img src="img/statistics/team_Icon.png" alt="">
+																	<span>Burton</span>
+																</div>
+																<div class="item P">
+																	<span>0</span>
+																</div>
+																<div class="item W">
+																	<span>0</span>
+																</div>
+																<div class="item D">
+																	<span>0</span>
+																</div>
+																<div class="item L">
+																	<span>0</span>
+																</div>
+																<div class="item Goals">
+																	<span>0,0</span>
+																</div>
+																<div class="item DIFF">
+																	<span>0,0</span>
+																</div>
+																<div class="item Points">
+																	<span>0</span>
+																</div>
+															</div>
+														</div>
+														
+													</div>
+
+												</div>
+												<div class="box">
+													<div class="Right">
+														<div class="rate_List">
+															<div class="dropdown_Box">
+																<div class="dropdown_Hover_But">
+																	<span>Alt/Üst Maçlar</span>
+																	<i class="fas fa-angle-right"></i>
+																	<ul class="dropdown_Menu">
+																		<li>
+																			<a href="">
+																				<span>Alt Üst 1.Devre</span>	
+																			</a>
+																		</li>
+																		<li>
+																			<a href="">
+																				<span>Alt Üst 2.Devre</span>	
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+															<ul>
+																<li class="active"><a href="">0.5</a></li>
+																<li><a href="">1.5</a></li>
+																<li><a href="">2.5</a></li>
+																<li><a href="">3.5</a></li>
+															</ul>
+														</div>
+														<div class="rate_Info">
+															<div class="LeftAndRight">
+																<div class="circle_Img">
+																	<img src="img/statistics/altUst1.png" alt="">
+																</div>
+																<div class="circle_Info">
+																	<div class="tit">
+																		<h6>Stromsgodset</h6>
+																	</div>
+																	<div class="ustAlt">
+																		<div class="item">
+																			<i></i>
+																			<span>Üst:8 (53.3%)</span>
+																		</div>
+																		<div class="item">
+																			<i></i>
+																			<span>Alt:7 (46.7%)</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="LeftAndRight">
+																<div class="circle_Img">
+																	<img src="img/statistics/altUst1.png" alt="">
+																</div>
+																<div class="circle_Info">
+																	<div class="tit">
+																		<h6>Stromsgodset</h6>
+																	</div>
+																	<div class="ustAlt">
+																		<div class="item">
+																			<i></i>
+																			<span>Üst:8 (53.3%)</span>
+																		</div>
+																		<div class="item">
+																			<i></i>
+																			<span>Alt:7 (46.7%)</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane " id="fixtures">
+										<div class="fixtures_Info">
+											<div class="box">
+												<div class="top">
+													<div class="tabMenuAndSelect">
+														<div class="tabMenu_One">
+															<ul>
+																<li class="active"><a href="">Fikstür</a></li>
+																<li><a href="">Tam Liste</a></li>
+																<li><a href="">Sonuö Matrix</a></li>
+															</ul>
+														</div>
+														<div class="select">
+															<div class="dropdown_Box">
+																<div class="dropdown_Hover_But">
+																	<span>2018</span>
+																	<i class="fas fa-angle-right"></i>
+																	<ul class="dropdown_Menu">
+																		<li>
+																			<a href="">
+																				<span>2017</span>	
+																			</a>
+																		</li>
+																		<li>
+																			<a href="">
+																				<span>2016</span>	
+																			</a>
+																		</li>
+																		<li>
+																			<a href="">
+																				<span>2015</span>	
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="cent">
+													<div class="tabMenuAndSelect">
+														<div class="tabMenu_One">
+															<ul>
+																<li class="active"><a href="">Tur - Tur</a></li>
+																<li><a href="">Haftaya Göre Görüntüle</a></li>
+																<li><a href="">Ay</a></li>
+															</ul>
+														</div>
+														<div class="select">
+															<div class="dropdown_Box">
+																<div class="dropdown_Hover_But">
+																	<span>Hafta 12</span>
+																	<i class="fas fa-angle-right"></i>
+																	<ul class="dropdown_Menu">
+																		<li>
+																			<a href="">
+																				<span>Hafta 11</span>	
+																			</a>
+																		</li>
+																		<li>
+																			<a href="">
+																				<span>Hafta 10</span>	
+																			</a>
+																		</li>
+																		<li>
+																			<a href="">
+																				<span>Hafta 9</span>	
+																			</a>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="title">
+														<h1>League One</h1>
+													</div>
+													<div class="subtitle">
+														<h2>Hafta 12</h2>
+													</div>
+													<div class="s_Grouptitle">
+														<div class="item Date"><span>Tarih</span></div>
+														<div class="item Match"><span>Maç</span></div>
+														<div class="item Space"><span>&nbsp;</span></div>
+														<div class="item One"><span>1</span></div>
+														<div class="item X"><span>X</span></div>
+														<div class="item Two"><span>2</span></div>
+														<div class="item Ft"><span>İY</span></div>
+														<div class="item Ft"><span>MS</span></div>
+													</div>
+													<div class="s_GroupInfo">
+														<div class="item Date"><span>04/08/18 12:30</span></div>
+														<div class="item Match"><img src="img/statistics/team_Icon.png" alt=""></div>
+														<div class="item Space">
+															<div class="detail_Iteam">
+																<span>Sunderland-Charlatton</span>
+															</div>
+															<div class="detail_Iteam">
+																<img src="img/statistics/team_Icon.png" alt="">
+															</div>
+														</div>
+														<div class="item One bg_Black"><span>1.83</span></div>
+														<div class="item X bg_Black"><span>3.50</span></div>
+														<div class="item Two bg_Black"><span>4.20</span></div>
+														<div class="item Ft"><span>0:1</span></div>
+														<div class="item Ft"><span>0:4</span></div>
+													</div>
+													<div class="s_GroupInfo">
+														<div class="item Date"><span>04/08/18 12:30</span></div>
+														<div class="item Match"><img src="img/statistics/team_Icon.png" alt=""></div>
+														<div class="item Space">
+															<div class="detail_Iteam">
+																<span>Sunderland-Charlatton</span>
+															</div>
+															<div class="detail_Iteam">
+																<img src="img/statistics/team_Icon.png" alt="">
+															</div>
+														</div>
+														<div class="item One bg_Black"><span>1.83</span></div>
+														<div class="item X bg_Black"><span>3.50</span></div>
+														<div class="item Two bg_Black"><span>4.20</span></div>
+														<div class="item Ft"><span>0:1</span></div>
+														<div class="item Ft"><span>0:4</span></div>
+													</div>
+													<div class="s_GroupInfo">
+														<div class="item Date"><span>04/08/18 12:30</span></div>
+														<div class="item Match"><img src="img/statistics/team_Icon.png" alt=""></div>
+														<div class="item Space">
+															<div class="detail_Iteam">
+																<span>Sunderland-Charlatton</span>
+															</div>
+															<div class="detail_Iteam">
+																<img src="img/statistics/team_Icon.png" alt="">
+															</div>
+														</div>
+														<div class="item One bg_Black"><span>1.83</span></div>
+														<div class="item X bg_Black"><span>3.50</span></div>
+														<div class="item Two bg_Black"><span>4.20</span></div>
+														<div class="item Ft"><span>0:1</span></div>
+														<div class="item Ft"><span>0:4</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane " id="archive">
+										<div class="archile_Info">
+											<div class="box">
+												<div class="title">
+													<h2>League One</h2>
+												</div>
+												<div class="table_Info">
+													<div class="s_Grouptitle">
+														<div class="item Year">
+															<span>Yıl</span>
+														</div>
+														<div class="item Champion">
+															<span>Şampiyon</span>
+														</div>
+														<div class="item Relegation">
+															<span>Küme Düşme</span>
+														</div>
+														<div class="item Promotion">
+															<span>Terfi</span>
+														</div>
+														<div class="item Space">
+															&nbsp;
+														</div>
+													</div>
+													<div class="s_GroupInfo">
+														<div class="item Year">
+															<span>17/18</span>
+														</div>
+														<div class="item Champion">
+															<img src="img/statistics/team_Icon.png" alt="">
+															<span>Wigan</span>
+														</div>
+														<div class="item Relegation">
+															<span>Buny</span>
+															<span>Northamton</span>
+															<span>MK Dons</span>
+															<span>Buny</span>
+														</div>
+														<div class="item Promotion">
+															<span>Rothertman</span>
+															<span>Wigan</span>
+															<span>Blackburn</span>
+														</div>
+														<div class="item Space">
+															<div class="detail_Iteam">
+																<span>Genel Görünüm</span>
+															</div>
+															<div class="detail_Iteam">
+																<span>Lig Görünümü</span>
+															</div>
+															<div class="detail_Iteam">
+																<span>Fikstür</span>
+															</div>
+														</div>
+													</div>
+													<div class="s_GroupInfo">
+														<div class="item Year">
+															<span>17/18</span>
+														</div>
+														<div class="item Champion">
+															<img src="img/statistics/team_Icon.png" alt="">
+															<span>Wigan</span>
+														</div>
+														<div class="item Relegation">
+															<span>Buny</span>
+															<span>Northamton</span>
+															<span>MK Dons</span>
+															<span>Buny</span>
+														</div>
+														<div class="item Promotion">
+															<span>Rothertman</span>
+															<span>Wigan</span>
+															<span>Blackburn</span>
+														</div>
+														<div class="item Space">
+															<div class="detail_Iteam">
+																<span>Genel Görünüm</span>
+															</div>
+															<div class="detail_Iteam">
+																<span>Lig Görünümü</span>
+															</div>
+															<div class="detail_Iteam">
+																<span>Fikstür</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+		</div>
+	</main>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+  	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src='js/jquery-ui.min.js'></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
+	<script type="text/javascript">
+		var $ = document.getElementById.bind(document);
+    	var scrollBody = $('scrollbody');
+    	var ps = new PerfectScrollbar(scrollBody);
+	</script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</body>
