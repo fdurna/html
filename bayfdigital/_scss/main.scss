@@ -1,0 +1,1108 @@
+
+@import 'flaticon';
+@import 'keyframes';
+@import 'mixins';
+@import 'responsive';
+@import 'variables';
+
+
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Proxima Nova' !important;
+	font-size: 13px;
+	background-color: $l-light-gray !important;
+}
+
+ul,li {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+
+a {
+	&:hover {
+		text-decoration:none !important;
+	}
+}
+
+
+
+@font-face {
+	font-family: 'Open Sans Light';
+	src: url('../fonts/OpenSans-Light.eot');
+	src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-Light.woff2') format('woff2'),
+	url('../fonts/OpenSans-Light.otf') format('woff2'),
+	url('../fonts/OpenSans-Light.woff') format('woff'),
+	url('../fonts/OpenSans-Light.woff2') format('woff2'),
+	url('../fonts/OpenSans-Light.ttf') format('truetype'),
+	url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Bold';
+	src: url('../fonts/OpenSans-ExtraBold.eot');
+	src: url('../fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+	url('../fonts/OpenSans-ExtraBold.otf') format('woff2'),
+	url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+	url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+	url('../fonts/OpenSans-ExtraBold.ttf') format('truetype'),
+	url('../fonts/OpenSans-ExtraBold.svg#OpenSans-ExtraBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url('../fonts/MarkSimonson-ProximaNovaRegular.eot');
+	src: url('../fonts/MarkSimonson-ProximaNovaRegular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.otf') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.woff') format('woff'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.ttf') format('truetype'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.svg#ProximaNovaACond-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url('../fonts/MarkSimonson-ProximaNovaBold.eot');
+	src: url('../fonts/MarkSimonson-ProximaNovaBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MarkSimonson-ProximaNovaBold.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaBold.otf') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaBold.woff') format('woff'),
+	url('../fonts/MarkSimonson-ProximaNovaBold.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaBold.ttf') format('truetype'),
+	url('../fonts/MarkSimonson-ProximaNovaBold.svg#ProximaNovaACond-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Proxima Nova Black';
+	src: url('../fonts/MarkSimonson-ProximaNovaBlack.eot');
+	src: url('../fonts/MarkSimonson-ProximaNovaBlack.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.otf') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.woff') format('woff'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.ttf') format('truetype'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.svg#ProximaNovaACond-Black') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Light';
+	src: url('../fonts/MarkSimonson-ProximaNovaLight.eot');
+	src: url('../fonts/MarkSimonson-ProximaNovaLight.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.otf') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.woff') format('woff'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.ttf') format('truetype'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.svg#ProximaNovaACond-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TexGyreadVentor';
+	src: url('../fonts/texgyreadventor-regular.eot');
+	src: url('../fonts/texgyreadventor-regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/texgyreadventor-regular.woff2') format('woff2'),
+	url('../fonts/texgyreadvFentor-regular.otf') format('woff2'),
+	url('../fonts/texgyreadventor-regular.woff') format('woff'),
+	url('../fonts/texgyreadventor-regular.woff2') format('woff2'),
+	url('../fonts/texgyreadventor-regular.ttf') format('truetype'),
+	url('../fonts/texgyreadventor-regular.svg#texgyreadventor-regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'champagne__limousinesregular';
+	src: url('../fonts/champagne__limousines-webfont.eot');
+	src: url('../fonts/champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/champagne__limousines-webfont.woff2') format('woff2'),
+	url('../fonts/champagne__limousines-webfont.woff') format('woff'),
+	url('../fonts/champagne__limousines-webfont.ttf') format('truetype'),
+	url('../fonts/champagne__limousines-webfont.svg#champagne__limousinesregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+@font-face {
+	font-family: 'champagne__limousinesbold';
+	src: url('../fonts/champagne__limousines_bold-webfont.eot');
+	src: url('../fonts/champagne__limousines_bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/champagne__limousines_bold-webfont.woff2') format('woff2'),
+	url('../fonts/champagne__limousines_bold-webfont.woff') format('woff'),
+	url('../fonts/champagne__limousines_bold-webfont.ttf') format('truetype'),
+	url('../fonts/champagne__limousines_bold-webfont.svg#champagne__limousinesbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.eot?v=3.0.1');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+	url('../fonts/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+	url('../fonts/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.dib {
+	display: inline-block;
+}
+
+header {
+	position: absolute;
+	width: 100%;
+	line-height:80px;
+	z-index:99999;
+	.container-fluid {
+		.row {
+			.col-md-6 {
+				&:nth-child(2) {
+				padding-right: 0px !important;
+				}
+			}
+		}
+	}
+	.logo {
+		a {
+			img {
+
+			}
+		}
+	}
+	.main_menu {
+		padding-top: 8px;
+		position: relative;
+		nav {
+			a {
+				font-family: 'Proxima Nova Bold';
+				color:$white;
+				font-size: 15px;
+				margin:0px 20px;
+				position: relative;  
+				&:after {
+					margin-top:5px;
+					@include clearFix;
+					width: 0px;
+					height: 3px;
+					left:0;
+					bottom:-6px;
+					background-color: $green;
+					transition:all 0.4s ease;
+				}
+				&:hover {
+					color:$green;
+					&:after {
+						width:100%;
+					}
+				}
+			}
+		}
+		.social_list {
+			a {
+				&:first-child {
+				
+				}
+				margin:0px 15px;
+				i {
+					&:before {
+						font-size:14px;
+						color:$white;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+.text {
+	margin-bottom: 30px;
+}
+svg{
+  width:100%;
+}
+
+section {
+	&#home {
+		background-image: url(../images/home_banner_2.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	&#page_about_banner {
+		background-image: url(../images/page_about_banner.png);
+		background-size: cover;
+		background-color: #1a1a27;
+		height: 650px;	
+	}
+	&#page_whyus_banner {
+		background-image: url(../images/page_whyus_banner.jpg);
+		background-size: cover;
+		height: 650px;	
+	}
+	&#page_services_banner {
+		background-image: url('../images/page_services_banner.png');
+		background-size: cover;
+		background-color: #395a46;
+	}
+	&#page_contact_banner {
+		background-image: url('../images/page_contact_banner.png');
+		background-repeat:no-repeat;
+		background-color: #gray;
+		padding: 100px 0px;
+	}
+	&#mission_and_vision {
+		background-color: #f6f6f6;
+		height: 650px;
+	}
+	&#detail_page_footer {
+		background-color: $white;
+		padding: 5% 0;
+	}
+	&#about {
+		background-color: $blackandblue;
+	}
+	&#services {
+		background-color: $blackandgreen;
+	}
+	&#footer {
+		background-color:$l-light-gray;
+	}
+	&.home_banner {
+		width: 100%;
+		height: 100vh;
+		position: relative;
+	}
+	&.contact {
+		.title {
+			h2 {
+				color:$black;
+				font-family: 'Proxima Nova Black';
+				font-size:30px;
+				position: relative;
+				&:before {
+						content:'Bize Nasıl Ulaşırsınız?';
+						position: absolute;
+						font-family: 'champagne__limousinesbold';
+						font-style: italic;
+						display: block;
+						color:$l-light-orange;
+						top:30px;
+						left:30px;
+						font-size:20px;
+				}
+			}
+		}
+		.google-maps {
+			iframe {
+			}
+		}
+		.contact-info {
+			.contact-detail {
+				margin-left: 40px;
+				display: inline-table;
+				.title {
+					h4 {
+						color:$black;
+						font-family: 'Proxima Nova Black';
+						font-size:20px;
+					}
+				}
+				address {
+
+				}
+				.tel-fax {
+					span {
+						a {
+							color:$black;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.page-services {
+		padding: 10% 0px ;
+		#web_design {
+			position: relative;
+			background-image: url('../images/services_web_design.png');
+			width:524px;
+			height:450px;
+			&:before {
+				@include clearFix;
+				width: 496px;
+				height: 419px;
+				background-image: url('../images/services_page_before.png');
+			}
+		}
+		#digital_design {
+			position: relative;
+			background-image: url('../images/services_digital_design.png');
+			width:524px;
+			height:450px;
+			&:after {
+				@include clearFix;
+				top:1px;
+				left:17px;
+				width: 496px;
+				height: 419px;
+				background-image: url('../images/services_page_after.png');
+			}
+		}
+		#web_based_software {
+			position: relative;
+			background-image: url('../images/web_based_software.png');
+			width:524px;
+			height:450px;
+			&:before {
+				@include clearFix;
+				width: 496px;
+				height: 419px;
+				background-image: url('../images/services_page_before_purple.png');
+			}
+		}
+		#digital_marketing {
+			position: relative;
+			background-image: url('../images/services_digital_marketing.png');
+			width:524px;
+			height:450px;
+			&:before {
+				@include clearFix;
+				top:2px;
+				left:19px;
+				width: 496px;
+				height: 419px;
+				background-image: url('../images/services_page_after_purple.png');
+			}
+		}
+		.row {
+
+		}
+		.services-img {
+		
+		}
+		.services-info {
+			.title {
+				h3 {
+					color:$white;
+					font-family: 'Proxima Nova Black';
+					font-size:30px;
+					&.web-design {
+						&:after {
+						content:'';
+						position: absolute;
+						right: 0;
+						top:12%;
+						width:27%;
+						height: 2px;
+						background-color: $l-light-orange;
+						display: block;
+						}
+						&:before {
+							content:'01';
+							position: absolute;
+							display: block;
+							color:$l-light-orange;
+							top:10px;
+							left:90px;
+							font-size:50px;
+						}
+					}
+					&.digital-design {
+						&:after {
+						content:'';
+						position: absolute;
+						left: 0;
+						top:12%;
+						width:25%;
+						height: 2px;
+						background-color: $l-light-orange;
+						display: block;
+						}
+						&:before {
+							content:'02';
+							position: absolute;
+							display: block;
+							color:$l-light-orange;
+							top:10px;
+							right:15%;
+							font-size:50px;
+						}
+					}
+					&.web-based-software {
+						&:after {
+						content:'';
+						position: absolute;
+						right: 0;
+						top:9%;
+						width:15%;
+						height: 2px;
+						background-color: $l-light-orange;
+						display: block;
+						}
+						&:before {
+							content:'03';
+							position: absolute;
+							display: block;
+							color:$l-light-orange;
+							top:10px;
+							left:10px;
+							font-size:50px;
+						}
+					}
+					&.digital-marketing {
+						&:after {
+						content:'';
+						position: absolute;
+						right:30px;
+						top:9%;
+						width:14%;
+						height:2px;
+						background-color: $l-light-orange;
+						display: block;
+						}
+						&:before {
+							content:'04';
+							position: absolute;
+							display: block;
+							color:$l-light-orange;
+							top:10px;
+							left:10px;
+							font-size:50px;
+						}
+					}
+				}
+			}
+			.paragraph {
+				p {
+					font-family: 'Proxima Nova Light';
+					color:$white;
+					font-size:15px;
+					margin:40px 0px;
+				}
+			}
+			.services-detail {
+				span {
+					cursor: default;
+					background-color: $green;
+					color:$white;
+					padding: 10px 15px;
+					border-radius:20px;
+					&.purple {
+						background-color:$purple;
+					}
+				}
+			}
+
+		}
+		.title {
+			h2 {
+				color:$white;
+				font-family: 'Proxima Nova Black';
+				font-size: 50px;
+				&:before {
+						font-family: 'champagne__limousinesbold';
+						color:$l-light-orange;
+						content:'Uzmanlık Alanlarımız';
+						position: absolute;
+						top:70px;
+						left:0;
+						right: 0;
+						display: block;
+						font-style: italic;
+						font-size:25px;
+				}
+			}
+		}
+		.services-list {
+			margin:65px 0px;
+			nav {
+				border-bottom:1px dashed $green;
+				padding-bottom:10px;
+				a {
+					margin:0px 15px;
+					font-family: 'Proxima Nova Light';
+					font-size: 18px;
+					color:$white;
+					&:hover {
+						color:$green;
+					}
+				}
+
+			}
+		}
+	}
+	&.page-about {
+		padding:12% 0px;
+		.page-about-title {
+			h2 {
+					font-family: 'Proxima Nova Black';
+					font-size:60px;
+					margin-top: 0;
+					color:$white;
+					position: relative;
+					&:after {
+						font-family: 'champagne__limousinesbold';
+						color:$l-light-orange;
+						content:'Biz Kimiz ?';
+						position: absolute;
+						display: block;
+						font-style: italic;
+						bottom:-20px;
+						left:220px;
+						font-size:25px;						
+					}
+			}
+		}
+		.page-about-info {
+			p {
+				font-family: 'Proxima Nova Regular';
+				color:$white;
+				font-size:17px;
+			}
+		}
+	}
+	&.page-why-us {
+		padding: 12% 0;
+		.page-why-us-info {
+			p {
+				font-family: 'Proxima Nova Regular';
+				color:$white;
+				font-size:17px;
+			}
+		}
+		.page-why-us {
+			h2 {
+				font-family: 'Proxima Nova Black';
+				font-size:60px;
+				color:$white;
+				&:after {
+						font-family: 'champagne__limousinesbold';
+						color:$l-light-orange;
+						content:'Farkımız';
+						position: absolute;
+						display: block;
+						font-style: italic;
+						bottom:-5px;
+						right:20px;
+						font-size:25px;	
+				}
+			}
+		}
+	}
+	&.mission-and-vision {
+		padding: 12% 0;
+		.page-mission-and-vision {
+			h2 {
+				font-family: 'Proxima Nova Black';
+				font-size:60px;
+				color:$black;
+			}
+			p {
+				font-family: 'Proxima Nova Regular';
+				color:$black;
+				font-size:17px;
+			}
+		}
+	}
+	&.detail-page-footer {
+		.footer {
+			.footer-title {
+				h5 {
+				font-family: 'Proxima Nova Black';
+				font-size:25px;
+				color:$black;
+				}
+			}
+			.footer-sect {
+				ul {
+					li {
+						margin-bottom:8px;
+						a {
+							font-size: 15px;
+							color:$black;
+							font-family: 'TexGyreadVentor';
+							&:hover {
+								border-bottom:2px solid $white;
+							}
+						}
+					}
+				}
+			}
+			.e-bulten-info {
+				span {
+					color:$black;
+				}
+			}
+			.e-bulten-input {
+				position: relative;
+				margin-top:20px;
+				input[type="text"] {
+					background-color: $black;
+					border-radius: 20px;
+					border:none;
+					padding: 10px 20px;
+					color:$white;
+					font-family: 'TexGyreadVentor';
+					outline: none;
+					position: relative;
+					text-align: right;
+					&::placeholder {
+						color:$white;
+					}
+				}
+				i {
+					top:30%;
+					left:50%;
+					position: absolute;
+					&:before {
+						color:$white;
+					}
+				}
+			}
+			.social-title {
+				margin-right:25px;
+				display: inline-block;
+				h6 {
+					font-size: 20px;
+				}
+			}
+			.social-list {
+				margin-top:10px;
+				ul {
+					li {
+						margin-right: 10px;
+						display: inline-block;
+						a {
+							display: block;
+							i {
+								&:before {
+									color:$black;
+									font-size: 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.copyright {
+				margin: 5px 0px;
+				span {
+					font-family: 'Proxima Nova Regular';
+					font-size:17px;
+				}
+			}
+		}
+	}
+	.content {
+		padding:180px 0px;
+		position: relative;
+		z-index: 9999;
+		.diamond {
+			height:400px;
+			width:400px;
+			background-color: $blackandblue;
+			box-shadow:0px 0px 0px 8px $blackandblue;
+			transform: rotate(45deg);
+			border-radius:15px;
+			vertical-align: middle;
+			display: inline-block;
+			border:3px dashed $green;
+			padding:10px;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			i {
+				span {
+					&.left {
+						&:before {
+							@include clearFix;
+							width:428px;
+							height:487px;
+							background-image: url('../images/home_banner_before.png');
+							left:-220px;
+							top:145px;
+							transform:rotate(-45deg);
+						}
+					}
+					&.right {
+						&:after {
+							@include clearFix;
+							width: 428px;
+							height: 487px;
+							background-image: url('../images/home_banner_after.png');
+							transform:rotate(-45deg);
+							left:175px;
+							top:-245px;
+						}
+					}
+				}
+			}
+			.info {
+				margin-top: 100px;
+				transform: rotate(-45deg);
+				.title {
+					h1 {
+						font-family: 'Proxima Nova Black';
+						font-size:30px;
+						color:$white;
+						span {
+						}
+					}
+				}
+				.link {
+					a {
+						color:$white;
+						background-color: $green;
+						padding:10px 20px;
+						font-size: 20px;
+						border-radius:30px;
+						span {
+							font-family: 'Proxima Nova Black';
+						}
+						&:hover {
+
+						}
+					}
+				}
+			}
+		}
+		.about {
+			.about-info {
+				color:$white;
+				padding:90px 0px;
+				h3 {
+					position: relative;
+					font-size:60px;
+					font-family: 'Proxima Nova Black';
+					margin-bottom: 45px;
+					&:before {
+						font-family: 'champagne__limousinesbold';
+						color:$l-light-orange;
+						content:'Biz Kimiz ?';
+						position: absolute;
+						display: block;
+						font-style: italic;
+						bottom:-20px;
+						left:220px;
+						font-size:25px;
+					}
+				}
+				p {
+					font-family: 'Proxima Nova Regular';
+					font-size: 20px;
+					margin-bottom:30px;
+				}
+				a {
+					color:$white;
+					border:3px solid $green;
+					padding:9px 12px;
+					font-family: 'Proxima Nova Bold';
+					font-size: 18px;
+					transition:all 0.4s ease;
+					&:hover {
+						background-color:$green;
+					}
+				}
+			}
+			.social-list {
+				a {
+					transition:all 0.4s ease;
+					margin-right: 35px;
+					color:$white;
+					i {
+					margin-right: 5px;
+					}
+					span {
+					}
+					&:hover {
+						color:$l-light-orange;
+					}
+				}
+			}
+			.slogan {
+				h2 {
+					color:$white;
+					font-family: 'Proxima Nova Black';
+					border:10px solid $green;
+					font-size:100px;
+					padding:20px;
+				}
+			}
+		}
+		.services {
+			.services-img {
+				&:before {
+					@include clearFix;
+					background-image: url('../images/services_banner_after.png');
+					left:-23px;
+					top:-20px;
+					width:580px;
+					height:488px;
+				}
+			}
+			.services-title {
+				h3 {
+					position: relative;
+					font-size:60px;
+					font-family: 'Proxima Nova Black';
+					margin-bottom: 45px;
+					color:$white;
+					&:before {
+						font-family: 'champagne__limousinesbold';
+						color:$l-light-orange;
+						content:'Neler Yapıyoruz ?';
+						position: absolute;
+						display: block;
+						font-style: italic;
+						bottom:-20px;
+						right:0;
+						font-size:25px;
+					}
+				}
+			}
+			.services-info {
+				ul {
+					li {
+						font-family: 'champagne__limousinesbold';
+						font-size:45px;
+						color:$white;
+					}
+				}
+			}
+		}
+		.footer {
+			.row {
+				&:nth-child(2) {
+					margin-top: 30px;
+				}
+			}
+			.footer-title {
+				margin-bottom: 30px;
+				h5 {
+					font-family: 'Proxima Nova Black';
+					font-size: 30px;
+				}
+			}
+			.footer-sect {
+				ul {
+					li {
+						margin-bottom:8px;
+						a {
+							font-size: 15px;
+							color:$black;
+							font-family: 'TexGyreadVentor';
+							&:hover {
+								border-bottom:2px solid $green;
+							}
+						}
+					}
+				}
+				address {
+
+				}
+				span {
+					display: block;
+				}
+			}
+			.e-bulten-info {
+				span {
+
+				}
+			}
+			.e-bulten-input {
+				position: relative;
+				margin-top:20px;
+				input[type="text"] {
+					background-color: $green;
+					border-radius: 20px;
+					border:none;
+					padding: 10px 20px;
+					color:$white;
+					font-family: 'TexGyreadVentor';
+					outline: none;
+					position: relative;
+					text-align: right;
+					&::placeholder {
+						color:$white;
+					}
+				}
+				i {
+					top:30%;
+					left:50%;
+					position: absolute;
+					&:before {
+						color:$white;
+					}
+				}
+			}
+			.social-title {
+				margin-right:25px;
+				display: inline-block;
+				h6 {
+					font-size: 20px;
+				}
+			}
+			.social-list {
+				margin-top:10px;
+				ul {
+					li {
+						margin-right: 10px;
+						display: inline-block;
+						a {
+							display: block;
+							i {
+								&:before {
+									color:$black;
+									font-size: 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.copyright {
+				margin: 5px 0px;
+				span {
+					font-family: 'Proxima Nova Regular';
+					font-size:17px;
+				}
+			}
+		}
+	}
+	.bannerbg {
+		position: absolute;
+		top:0;
+		left:0;
+		right: 0;
+		bottom:0;
+		background-color: rgba(0,0,0,0.4);
+	}
+	&.buttons {
+		position: fixed;
+		z-index: 99999999999;
+		right:2%;
+		bottom:2%;
+		ul {
+			margin:0;
+			padding: 0;
+			position: relative;
+			li {
+				margin: 10px 0px;
+				display: block;
+				list-style-type: none;
+				a {
+					&.button {
+						width:12px;
+						height:12px;
+						border-radius: 100%;
+						border:3px solid white;
+						padding:4px;
+						display: block;
+						transition: all 0.4s ease;
+						&:hover {
+							background-color:white ;
+						}
+					}
+				}
+				span {
+					&.text {
+						font-family: 'Proxima Nova Light';
+						margin-top:-20px;
+						padding:5px 10px;
+						background-color: white;
+						color:$black;
+						position: absolute;
+						left:-100px;
+						text-align: center;
+						display: block;
+						transition: all .4s ease-in-out 0s;
+						display: none;
+						&:after {
+							@include clearFix;
+							right:-8px;
+							top:8px;
+							bottom: 0;
+							width: 0;
+							height: 0;
+							border-style: solid;
+							border-width: 7px 0 7px 9px;
+							border-color: transparent transparent transparent white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#fp-nav {
+	ul {
+		li {
+
+			height: 20px !important;
+			.fp-tooltip {
+				background-color: $white;
+				color:$black !important;
+				padding: 5px 14px;
+				overflow: inherit !important;
+				&:after {
+					@include clearFix;
+					top:10px;
+					z-index: 999;
+					right:-9px;
+					width: 0;
+					height: 0;
+					border-style: solid;
+					border-width: 5px 0 5px 9px;
+					border-color: transparent transparent transparent $white;
+				}
+			}
+			&:hover {
+				a {
+					span {
+						margin:-2px 0 0 -2px!important;
+						background-color: $white !important;
+					}
+				}
+			}
+			a {
+				span {
+					background: transparent !important;
+					border:4px solid $white !important;
+					border-radius: 100% !important;
+					padding: 3px;
+				}
+			&.active {
+					span {
+						margin:-2px 0px 0px -2px !important;
+						background-color: $white !important;
+					}
+				}
+			}
+		}
+	}
+}

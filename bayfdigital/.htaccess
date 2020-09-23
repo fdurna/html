@@ -1,0 +1,24 @@
+
+
+
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^index.*$ index.php [NC]
+RewriteRule ^kurumsal.*$ kurumsal.php [NC]
+RewriteRule ^hakkimizda.*$ hakkimizda.php [NC]
+RewriteRule ^hizmetler.*$ hizmetler.php [NC]
+RewriteRule ^referanslar.*$ referanslar.php [NC]
+RewriteRule ^iletisim.*$ iletisim.php [NC]
+
+
+
+
+
+
+
+
+
+
+
+
+
